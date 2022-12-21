@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Simple Login Form</title>
+    <link rel="stylesheet" type="text/css" href="../css/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login">
+        <form>
+            <label for="chk" aria-hidden="true" style="color: black">Đăng nhập</label>
+            <input type="text" class="form-control" id="username" placeholder="Username" required="required"
+                name="username">
+            <input type="password" class="form-control" placeholder="Password" required="required" name="password">
+            <button type="submit" class="btn btn-primary btn-block" id="btnLogin" runat="server">Log in</button>
+            <p runat="server" class="error" id="errorL" style=" color:red"></p>
+            <a href="dangky.html" class="new-account">Create an Account</a>
+        </form>
+    </div>
+</body>
+
+</html>

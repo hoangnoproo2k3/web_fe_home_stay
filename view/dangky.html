@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="../css/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="signup">
+            <form id="register">
+                <label for="chk" aria-hidden="true">Đăng ký</label>
+                <input type="text" name="username" placeholder="User name" id="username" value="hoang">
+                <p runat="server" class="error" id="username_error" style="color:red"></p>
+                <input type="email" name="email" placeholder="Email" id="email">
+                <p runat="server" class="error" id="email_error" style="color:red"></p>
+                <input type="password" name="password" placeholder="Password" id="password">
+                <p runat="server" class="error" id="password_error" style="color:red"></p>
+                <input type="password" id="re-password" placeholder="Nhập lại mật khẩu" name="re-password" />
+                <p runat="server" class="error" id="xnpassword_error" style="color:red"></p>
+                <button class="auth_btn" id="btnReg">Đăng ký</button>
+                <p runat="server" class="error" id="btn_error" style="color:red"></p>
+            </form>
+        </div>
+
+    </div>
+    <script src="../js/dangky.js"></script>
+</body>
+
+</html>

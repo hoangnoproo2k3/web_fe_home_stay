@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background: #ffffff;
+    color: #4444;
+    display: flex;
+    box-shadow: 1px 10px 20px #999999;
+    /* position: fixed; */
+    justify-content: space-around;
+    /* z-index: 100; */
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+#header a {
+    display: block !important;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#header li:hover>a {
+    color: rgb(202, 28, 28);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-around;
+    flex: 60%;
+}
+
+.nav-header>li>a {
+    padding: 30px 10px;
+    text-transform: uppercase;
+}
+
+.nav-header li {
+    position: relative;
+}
+
+.nav-header li .sub-nav-header {
+    position: absolute;
+    top: 72px;
+    width: 160px;
+    display: none;
+    background: #ffffff;
+    box-shadow: 1px 10px 20px #999999;
+
+}
+
+.sub-nav-header li a {
+    margin-top: 12px;
+    padding: 4px;
+}
+
+.nav-header li:hover .sub-nav-header {
+    display: block;
+}
+
+.nav-header li .sub-nav-header a {
+    margin-left: 12px;
+}
+
+#header .account {
+    flex: 20%;
+    display: flex;
+    justify-content: end;
+    margin-top: 14px;
+}
+
+#header .account a {
+    padding: 8px;
+    border-radius: 12px;
+    background: #bc6868;
+    margin-right: 12px;
+}
+
+#header .account li:hover a {
+    color: rgb(233, 237, 226);
+}
+
+#input-local {
+    position: relative;
+}
+
+form input::placeholder {
+    font-style: italic;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+#input-local .fa-location-dot:before {
+    position: absolute;
+    color: #bc6868;
+    top: 10px;
+    left: 18px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background: #252c41;
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.logo-footer {
+    flex: 35%;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+#footer h3.title {
+    padding-top: 20px;
+    color: #f3ebeb;
+    padding-bottom: 10px;
+}
+
+.widget {
+    flex: 15%;
+}
+
+.widget a {
+    padding: 6px 0;
+    color: #dfdcdc;
+}
+
+.widget a:hover {
+    color: #2e56cb;
+}
+
+.widget i {
+    margin-right: 12px;
+}
+
+.footer-bottom {
+    background: #1b2132;
+    padding: 12px;
+    color: #bc6868;
+}
